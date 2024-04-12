@@ -128,7 +128,7 @@
          right_Rocket = new ScenePoly();
          right_Rocket.color = new Color(200,200,150);
          right_Rocket.x = new double[] {1.2, 1.2, 1.575, 1.575, 1.45, 1.3 2.4 };
-         right_Rocket.y = = new double[] {5.375, -1.125, -1.125, 5.375, 5.875, 5.875};
+         right_Rocket.y = new double[] {5.375, -1.125, -1.125, 5.375, 5.875, 5.875};
          right_Rocket.n = 6;
  
          left_L1 = new ScenePoly();
