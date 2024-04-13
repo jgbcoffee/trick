@@ -133,27 +133,27 @@
  
          left_L1 = new ScenePoly();
          left_L1.color = new Color(100,100,100);
-         left_L1.x = new double[]  { -1.46, -1.0,  -1.0, -1.48 };
-         left_L1.y  = new double[] { -0.51, -0.95, -1.0, -0.55};
-         left_L1.n = 4;
+         left_L1.x = new double[] {-1.0, -1.2, -1.1};
+         left_L1.y  = new double[] {-0.6, -0.6, -0.7};
+         left_L1.n = 3;
  
          right_L1 = new ScenePoly();
          right_L1.color = new Color(100,100,100);
-         right_L1.x = new double[]  { 1.46, 1.0,  1.0, 1.48 };
-         right_L1.y  = new double[] { -0.51, -0.95, -1.0, -0.55};
-         right_L1.n = 4;
+         right_L1.x = new double[] {1.0, 1.2, 1.1};
+         right_L1.y  = new double[] {-0.6, -0.6, -0.7};
+         right_L1.n = 3;
  
          left_L2 = new ScenePoly();
          left_L2.color = new Color(100,100,100);
-         left_L2.x = new double[]  { -1.0, -1.0, -1.75, -1.84};
-         left_L2.y  = new double[] { -0.95, -1.0, -1.28,-1.25};
-         left_L2.n = 4;
+         left_L2.x = new double[] {-1.0, -1.2, -1.1};
+         left_L2.y  = new double[] {-0.8, -0.8, -0.7};
+         left_L2.n = 3;
  
          right_L2 = new ScenePoly();
          right_L2.color = new Color(100,100,100);
-         right_L2.x = new double[]  { 1.0, 1.0, 1.75, 1.84};
-         right_L2.y  = new double[] { -0.95, -1.0, -1.28,-1.25};
-         right_L2.n = 4;
+         right_L2.x = new double[] {1.0, 1.2, 1.1};
+         right_L2.y  = new double[] {-0.8, -0.8, -0.7};
+         right_L2.n = 3;
          
  /*
  * Stage 1 s are left_ and right_
