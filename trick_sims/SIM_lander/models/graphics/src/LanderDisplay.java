@@ -160,27 +160,27 @@
  */   
          left_L3 = new ScenePoly();
          left_L3.color = new Color(50,50,50);
-         left_L3.x = new double[] {-1.2, -1.2, -1.575, -1.575, -1.45, -1.325};
-         left_L3.y  = new double[] {5.375, -1.125, -1.125, 5.375, 5.875, 5.875};
-         left_L3.n = 6;
+         left_L3.x = new double[] {-1.0, -1.2, -1.1};
+         left_L3.y  = new double[] {4.9, 4.9, 5.0};
+         left_L3.n = 3;
  
          right_L3 = new ScenePoly();
          right_L3.color = new Color(50,50,50);
-         right_L3.x = new double[] {1.2, 1.2, 1.575, 1.575, 1.45, 1.325};
-         right_L3.y = new double[] {5.375, -1.125, -1.125, 5.375, 5.875, 5.875};
-         right_L3.n = 6;
+         right_L3.x = new double[] {1.0, 1.2, 1.1};
+         right_L3.y = new double[] {4.9, 4.9, 5.0};
+         right_L3.n = 3;
  
          left_L4 = new ScenePoly();
          left_L4.color = new Color(100,100,100);
-         left_L4.x = new double[]  { -1.78, -1.94, -1.98, -1.81};
-         left_L4.y  = new double[] { -1.27, -1.7, -1.7, -1.26};
-         left_L4.n = 4;
+         left_L4.x = new double[] {-1.0, -1.2, -1.1};
+         left_L4.y  = new double[] {5.1, 5.1, 5.0};
+         left_L4.n = 3;
  
          right_L4 = new ScenePoly();
          right_L4.color = new Color(100,100,100);
-         right_L4.x = new double[]  { 1.78, 1.94, 1.98, 1.81};
-         right_L4.y  = new double[] { -1.27, -1.7, -1.7, -1.26};
-         right_L4.n = 4;
+         right_L4.x = new double[] {1.0, 1.2, 1.1};
+         right_L4.y  = new double[] {5.1, 5.1, 5.0};
+         right_L4.n = 3;
  
          fuselage = new ScenePoly();
          fuselage.color = new Color(200,200,220);
