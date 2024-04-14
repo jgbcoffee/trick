@@ -187,15 +187,16 @@
          fuselage.x = new double[] {0.25, 0.75, 0.75, 1.00, 1.00, -1.00, -1.00, -0.75, -0.75, -0.25};
          fuselage.y  = new double[] {16.0, 15.0, 12.5, 11.5, -1.00, -1.00, 11.5, 12.5, 15.0, 16.0};
          fuselage.n = 10;
-  /*
- * Good up until here
- */   
+
          stage2_nozzle2 = new ScenePoly();
          stage2_nozzle2.color = new Color(150,150,150);
          stage2_nozzle2.x = new double[] {-0.08, -0.125, 0.125, 0.08};
          stage2_nozzle2.y  = new double[] {-1.0, -1.5, -1.5, -1.0};
          stage2_nozzle2.n = 4;
- 
+   /*
+ * Good up until here
+ * Leave side rockets alone for now
+ */   
          left_rcs_pod = new ScenePoly();
          left_rcs_pod.color = new Color(100,100,100);
          left_rcs_pod.x = new double[]  { -1.0, -1.25, -1.25, -1.0};
@@ -778,7 +779,7 @@
          add(panelGroup0);
  
          rangeView.setScale(32);
-         rangeView.setLanderPos (0.0, 1.8);
+         rangeView.setLanderPos (0.0, 1.5);
  
          setSize(800, 500);
          setLocationRelativeTo(null);
