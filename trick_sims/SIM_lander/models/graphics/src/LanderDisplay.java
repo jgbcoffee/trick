@@ -78,11 +78,11 @@
      private ScenePoly left_L4,  right_L4;
      private ScenePoly fuselage;
      private ScenePoly stage2_nozzle2;
-     private ScenePoly left_rcs_pod, right_rcs_pod;
-     private ScenePoly left_top_rcs_nozzle, right_top_rcs_nozzle, left_bottom_rcs_nozzle, right_bottom_rcs_nozzle;
-     private ScenePoly left_top_rcs_plume, right_top_rcs_plume, left_bottom_rcs_plume, right_bottom_rcs_plume;
+     private ScenePoly stage_1_engine_1, stage_1_engine_2;
+     private ScenePoly stage_1_engine_3, stage_2_engine_1, stage_2_engine_2, stage_2_engine_3;
+     private ScenePoly left_plume_1, right_plume_3, left_bottom_rcs_plume, right_bottom_rcs_plume;
      private ScenePoly docking_ring;
-     private ScenePoly flame;
+     private ScenePoly flame_2;
  
      private int[] workPolyX, workPolyY;
  
@@ -197,47 +197,47 @@
  * Good up until here
  * Leave side rockets alone for now
  */   
-         left_rcs_pod = new ScenePoly();
-         left_rcs_pod.color = new Color(100,100,100);
-         left_rcs_pod.x = new double[]  { -1.0, -1.25, -1.25, -1.0};
-         left_rcs_pod.y  = new double[] { 0.1, 0.1, -0.1, -0.1};
-         left_rcs_pod.n = 4;
+         stage_1_engine_1 = new ScenePoly();
+         stage_1_engine_1.color = new Color(100,100,100);
+         stage_1_engine_1.x = new double[]  { -1.0, -1.25, -1.25, -1.0};
+         stage_1_engine_1.y  = new double[] { 0.1, 0.1, -0.1, -0.1};
+         stage_1_engine_1.n = 4;
  
-         right_rcs_pod = new ScenePoly();
-         right_rcs_pod.color = new Color(100,100,100);
-         right_rcs_pod.x = new double[]  { 1.0, 1.25, 1.25, 1.0};
-         right_rcs_pod.y  = new double[] { 0.1, 0.1, -0.1, -0.1};
-         right_rcs_pod.n = 4;
+         stage_1_engine_2 = new ScenePoly();
+         stage_1_engine_2.color = new Color(100,100,100);
+         stage_1_engine_2.x = new double[]  { 1.0, 1.25, 1.25, 1.0};
+         stage_1_engine_2.y  = new double[] { 0.1, 0.1, -0.1, -0.1};
+         stage_1_engine_2.n = 4;
  
-         left_top_rcs_nozzle = new ScenePoly();
-         left_top_rcs_nozzle.color = new Color(255,100,100);
-         left_top_rcs_nozzle.x = new double[]  { -1.12, -1.18, -1.2, -1.1 };
-         left_top_rcs_nozzle.y  = new double[] { 0.1, 0.1, 0.2, 0.2 };
-         left_top_rcs_nozzle.n = 4;
+         stage_1_engine_3 = new ScenePoly();
+         stage_1_engine_3.color = new Color(255,100,100);
+         stage_1_engine_3.x = new double[]  { -1.12, -1.18, -1.2, -1.1 };
+         stage_1_engine_3.y  = new double[] { 0.1, 0.1, 0.2, 0.2 };
+         stage_1_engine_3.n = 4;
  
-         left_top_rcs_plume = new ScenePoly();
-         left_top_rcs_plume.color = new Color(255,255,255);
-         left_top_rcs_plume.x = new double[]  { -1.1, -1.2, -1.24, -1.06 };
-         left_top_rcs_plume.y  = new double[] { 0.2, 0.2, 0.4, 0.4 };
-         left_top_rcs_plume.n = 4;
+         left_plume_1 = new ScenePoly();
+         left_plume_1.color = new Color(255,255,255);
+         left_plume_1.x = new double[]  { -1.1, -1.2, -1.24, -1.06 };
+         left_plume_1.y  = new double[] { 0.2, 0.2, 0.4, 0.4 };
+         left_plume_1.n = 4;
  
-         right_top_rcs_nozzle = new ScenePoly();
-         right_top_rcs_nozzle.color = new Color(255,100,100);
-         right_top_rcs_nozzle.x = new double[]  { 1.12, 1.18, 1.2, 1.1 };
-         right_top_rcs_nozzle.y  = new double[] { 0.1, 0.1, 0.2, 0.2 };
-         right_top_rcs_nozzle.n = 4;
+         stage_2_engine_1 = new ScenePoly();
+         stage_2_engine_1.color = new Color(255,100,100);
+         stage_2_engine_1.x = new double[]  { 1.12, 1.18, 1.2, 1.1 };
+         stage_2_engine_1.y  = new double[] { 0.1, 0.1, 0.2, 0.2 };
+         stage_2_engine_1.n = 4;
  
-         right_top_rcs_plume = new ScenePoly();
-         right_top_rcs_plume.color = new Color(255,255,255);
-         right_top_rcs_plume.x = new double[]  { 1.1, 1.2, 1.24, 1.06 };
-         right_top_rcs_plume.y  = new double[] { 0.2, 0.2, 0.4, 0.4 };
-         right_top_rcs_plume.n = 4;
+         right_plume_3 = new ScenePoly();
+         right_plume_3.color = new Color(255,255,255);
+         right_plume_3.x = new double[]  { 1.1, 1.2, 1.24, 1.06 };
+         right_plume_3.y  = new double[] { 0.2, 0.2, 0.4, 0.4 };
+         right_plume_3.n = 4;
  
-         left_bottom_rcs_nozzle = new ScenePoly();
-         left_bottom_rcs_nozzle.color = new Color(255,100,100);
-         left_bottom_rcs_nozzle.x = new double[]  { -1.12, -1.18, -1.2, -1.1 };
-         left_bottom_rcs_nozzle.y  = new double[] { -0.1, -0.1, -0.2, -0.2 };
-         left_bottom_rcs_nozzle.n = 4;
+         stage_2_engine_2 = new ScenePoly();
+         stage_2_engine_2.color = new Color(255,100,100);
+         stage_2_engine_2.x = new double[]  { -1.12, -1.18, -1.2, -1.1 };
+         stage_2_engine_2.y  = new double[] { -0.1, -0.1, -0.2, -0.2 };
+         stage_2_engine_2.n = 4;
  
          left_bottom_rcs_plume = new ScenePoly();
          left_bottom_rcs_plume.color = new Color(255,255,255);
@@ -245,11 +245,11 @@
          left_bottom_rcs_plume.y  = new double[] { -0.2, -0.2, -0.4, -0.4 };
          left_bottom_rcs_plume.n = 4;
  
-         right_bottom_rcs_nozzle = new ScenePoly();
-         right_bottom_rcs_nozzle.color = new Color(255,100,100);
-         right_bottom_rcs_nozzle.x = new double[]  { 1.12, 1.18, 1.2, 1.1 };
-         right_bottom_rcs_nozzle.y  = new double[] { -0.1, -0.1, -0.2, -0.2 };
-         right_bottom_rcs_nozzle.n = 4;
+         stage_2_engine_3 = new ScenePoly();
+         stage_2_engine_3.color = new Color(255,100,100);
+         stage_2_engine_3.x = new double[]  { 1.12, 1.18, 1.2, 1.1 };
+         stage_2_engine_3.y  = new double[] { -0.1, -0.1, -0.2, -0.2 };
+         stage_2_engine_3.n = 4;
  
          right_bottom_rcs_plume = new ScenePoly();
          right_bottom_rcs_plume.color = new Color(255,255,255);
@@ -263,11 +263,11 @@
          docking_ring.y  = new double[] {6.2, 6.0, 6.0, 6.2};
          docking_ring.n = 4;
  
-         flame = new ScenePoly();
-         flame.color = new Color(200,150,100);
-         flame.x = new double[] {0.0, -0.125, 0.125};
-         flame.y  = new double[] {-5.0, -1.5, -1.5};
-         flame.n = 3;
+         flame_2 = new ScenePoly();
+         flame_2.color = new Color(200,150,100);
+         flame_2.x = new double[] {0.0, -0.125, 0.125};
+         flame_2.y  = new double[] {-5.0, -1.5, -1.5};
+         flame_2.n = 3;
  
          workPolyX = new int[30];
          workPolyY = new int[30];
@@ -396,37 +396,35 @@
          drawScenePoly(g2d, right_L4, landerAngle, landerPos[0], landerPos[1]);
          drawScenePoly(g2d, fuselage, landerAngle, landerPos[0], landerPos[1]);
          drawScenePoly(g2d, stage2_nozzle2, (landerAngle + nozzleAngle), landerPos[0], landerPos[1]);
-         drawScenePoly(g2d, left_rcs_pod, landerAngle, landerPos[0], landerPos[1]);
-         drawScenePoly(g2d, right_rcs_pod, landerAngle, landerPos[0], landerPos[1]);
+         drawScenePoly(g2d, stage_1_engine_1, landerAngle, landerPos[0], landerPos[1]);
+         drawScenePoly(g2d, stage_1_engine_2, landerAngle, landerPos[0], landerPos[1]);
  
-         drawScenePoly(g2d, left_top_rcs_nozzle, landerAngle, landerPos[0], landerPos[1]);
-         drawScenePoly(g2d, right_top_rcs_nozzle, landerAngle, landerPos[0], landerPos[1]);
-         drawScenePoly(g2d, left_bottom_rcs_nozzle, landerAngle, landerPos[0], landerPos[1]);
-         drawScenePoly(g2d, right_bottom_rcs_nozzle, landerAngle, landerPos[0], landerPos[1]);
+         drawScenePoly(g2d, stage_1_engine_3, landerAngle, landerPos[0], landerPos[1]);
+         drawScenePoly(g2d, stage_2_engine_1, landerAngle, landerPos[0], landerPos[1]);
+         drawScenePoly(g2d, stage_2_engine_2, landerAngle, landerPos[0], landerPos[1]);
+         drawScenePoly(g2d, stage_2_engine_3, landerAngle, landerPos[0], landerPos[1]);
          drawScenePoly(g2d, docking_ring, landerAngle, landerPos[0], landerPos[1]);
-         drawScenePoly(g2d, flame, landerAngle, landerPos[0], landerPos[1]);
+         drawScenePoly(g2d, flame_2, landerAngle, landerPos[0], landerPos[1]);
  
          if ( rcs_state > 0) {
-             drawScenePoly(g2d, left_top_rcs_plume, landerAngle, landerPos[0], landerPos[1]);
-             drawScenePoly(g2d, right_bottom_rcs_plume, landerAngle, landerPos[0], landerPos[1]);
+             drawScenePoly(g2d, left_plume_1, landerAngle, landerPos[0], landerPos[1]);
          } else if ( rcs_state < 0) {
-             drawScenePoly(g2d, right_top_rcs_plume, landerAngle, landerPos[0], landerPos[1]);
-             drawScenePoly(g2d, left_bottom_rcs_plume, landerAngle, landerPos[0], landerPos[1]);
+             drawScenePoly(g2d, right_plume_3, landerAngle, landerPos[0], landerPos[1]);
          }
  
          // ===============================================================================
          // Move the first vertex of the triangular polygon that represents the main-engine
          // plume to make the triangle bigger or smaller depending on the throttle setting.
-         flame.y[0] = - (landerThrottle / 100.0) * 5.0 - 1.3;
+         flame_2.y[0] = - (landerThrottle / 100.0) * 5.0 - 1.3;
  
-         for (ii = 0; ii < flame.n; ii++) {
+         for (ii = 0; ii < flame_2.n; ii++) {
              workPolyX[ii] = (int)(worldOriginX + scale *
-                 ( Math.cos(landerAngle+nozzleAngle) * flame.x[ii] - Math.sin(landerAngle+nozzleAngle) * flame.y[ii] + landerPos[0] ));
+                 ( Math.cos(landerAngle+nozzleAngle) * flame_2.x[ii] - Math.sin(landerAngle+nozzleAngle) * flame_2.y[ii] + landerPos[0] ));
              workPolyY[ii] = (int)(worldOriginY - scale *
-                 ( Math.sin(landerAngle+nozzleAngle) * flame.x[ii] + Math.cos(landerAngle+nozzleAngle) * flame.y[ii] + landerPos[1] ));
+                 ( Math.sin(landerAngle+nozzleAngle) * flame_2.x[ii] + Math.cos(landerAngle+nozzleAngle) * flame_2.y[ii] + landerPos[1] ));
          }
-         g2d.setPaint(flame.color);
-         g2d.fillPolygon(workPolyX, workPolyY, flame.n);
+         g2d.setPaint(flame_2.color);
+         g2d.fillPolygon(workPolyX, workPolyY, flame_2.n);
  
          // Draw range markers.
          int tickRange = 50;
