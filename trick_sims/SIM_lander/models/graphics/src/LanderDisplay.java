@@ -212,7 +212,7 @@
          stage_1_engine_3 = new ScenePoly();
          stage_1_engine_3.color = new Color(255,100,100);
          stage_1_engine_3.x = new double[] {-1.27, -1.3, -1.175, -1.205};
-         stage_1_engine_3.y = new double[] {-1.125, -1.5, -1.5, -1.125}
+         stage_1_engine_3.y = new double[] {-1.125, -1.5, -1.5, -1.125};
          stage_1_engine_3.n = 4;
  
          left_plume_1 = new ScenePoly();
@@ -407,9 +407,9 @@
          drawScenePoly(g2d, flame_2, landerAngle, landerPos[0], landerPos[1]);
  
          if ( rcs_state > 0) {
-             drawScenePoly(g2d, left_plume_1, landerAngle, landerPos[0], landerPos[1]);
+             drawScenePoly(g2d, left_plume_3, landerAngle, landerPos[0], landerPos[1]);
          } else if ( rcs_state < 0) {
-             drawScenePoly(g2d, right_plume_3, landerAngle, landerPos[0], landerPos[1]);
+             drawScenePoly(g2d, right_plume_2, landerAngle, landerPos[0], landerPos[1]);
          }
  
          // ===============================================================================
