@@ -77,7 +77,7 @@
      private ScenePoly left_L3,  right_L3;
      private ScenePoly left_L4,  right_L4;
      private ScenePoly fuselage;
-     private ScenePoly nozzle;
+     private ScenePoly stage2_nozzle2;
      private ScenePoly left_rcs_pod, right_rcs_pod;
      private ScenePoly left_top_rcs_nozzle, right_top_rcs_nozzle, left_bottom_rcs_nozzle, right_bottom_rcs_nozzle;
      private ScenePoly left_top_rcs_plume, right_top_rcs_plume, left_bottom_rcs_plume, right_bottom_rcs_plume;
@@ -187,12 +187,14 @@
          fuselage.x = new double[] {0.25, 0.75, 0.75, 1.00, 1.00, -1.00, -1.00, -0.75, -0.75, -0.25};
          fuselage.y  = new double[] {16.0, 15.0, 12.5, 11.5, -1.00, -1.00, 11.5, 12.5, 15.0, 16.0};
          fuselage.n = 10;
- 
-         nozzle = new ScenePoly();
-         nozzle.color = new Color(150,150,150);
-         nozzle.x = new double[]  { -0.3, -0.4, 0.4, 0.3};
-         nozzle.y  = new double[] { -1.0, -1.3, -1.3, -1.0};
-         nozzle.n = 4;
+  /*
+ * Good up until here
+ */   
+         stage2_nozzle2 = new ScenePoly();
+         stage2_nozzle2.color = new Color(150,150,150);
+         stage2_nozzle2.x = new double[] {-0.08, -0.125, 0.125, 0.08};
+         stage2_nozzle2.y  = new double[] {-1.0, -1.5, -1.5, -1.0};
+         stage2_nozzle2.n = 4;
  
          left_rcs_pod = new ScenePoly();
          left_rcs_pod.color = new Color(100,100,100);
@@ -262,8 +264,8 @@
  
          flame = new ScenePoly();
          flame.color = new Color(200,150,100);
-         flame.x = new double[]  { 0.0, -0.4, 0.4 };
-         flame.y  = new double[] { -6.3, -1.3, -1.3 };
+         flame.x = new double[] {0.0, -0.125, 0.125};
+         flame.y  = new double[] {-5.0, -1.5, -1.5};
          flame.n = 3;
  
          workPolyX = new int[30];
@@ -392,7 +394,7 @@
          drawScenePoly(g2d, left_L4, landerAngle, landerPos[0], landerPos[1]);
          drawScenePoly(g2d, right_L4, landerAngle, landerPos[0], landerPos[1]);
          drawScenePoly(g2d, fuselage, landerAngle, landerPos[0], landerPos[1]);
-         drawScenePoly(g2d, nozzle, (landerAngle + nozzleAngle), landerPos[0], landerPos[1]);
+         drawScenePoly(g2d, stage2_nozzle2, (landerAngle + nozzleAngle), landerPos[0], landerPos[1]);
          drawScenePoly(g2d, left_rcs_pod, landerAngle, landerPos[0], landerPos[1]);
          drawScenePoly(g2d, right_rcs_pod, landerAngle, landerPos[0], landerPos[1]);
  
