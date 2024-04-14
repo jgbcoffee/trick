@@ -199,44 +199,44 @@
  */   
          stage_1_engine_1 = new ScenePoly();
          stage_1_engine_1.color = new Color(100,100,100);
-         stage_1_engine_1.x = new double[]  { -1.0, -1.25, -1.25, -1.0};
-         stage_1_engine_1.y  = new double[] { 0.1, 0.1, -0.1, -0.1};
+         stage_1_engine_1.x = new double[] {-1.57, -1.6, -1.475, -1.505};
+         stage_1_engine_1.y  = new double[] {-1.125, -1.5, -1.5, -1.125};
          stage_1_engine_1.n = 4;
  
          stage_1_engine_2 = new ScenePoly();
          stage_1_engine_2.color = new Color(100,100,100);
-         stage_1_engine_2.x = new double[]  { 1.0, 1.25, 1.25, 1.0};
-         stage_1_engine_2.y  = new double[] { 0.1, 0.1, -0.1, -0.1};
+         stage_1_engine_2.x = new double[] {-1.42, -1.45, -1.325, -1.355};
+         stage_1_engine_2.y  new double[] {-1.125, -1.5, -1.5, -1.125};
          stage_1_engine_2.n = 4;
  
          stage_1_engine_3 = new ScenePoly();
          stage_1_engine_3.color = new Color(255,100,100);
-         stage_1_engine_3.x = new double[]  { -1.12, -1.18, -1.2, -1.1 };
-         stage_1_engine_3.y  = new double[] { 0.1, 0.1, 0.2, 0.2 };
+         stage_1_engine_3.x = new double[] {-1.27, -1.3, -1.175, -1.205};
+         stage_1_engine_3.y  new double[] {-1.125, -1.5, -1.5, -1.125}
          stage_1_engine_3.n = 4;
  
          left_plume_1 = new ScenePoly();
          left_plume_1.color = new Color(255,255,255);
-         left_plume_1.x = new double[]  { -1.1, -1.2, -1.24, -1.06 };
-         left_plume_1.y  = new double[] { 0.2, 0.2, 0.4, 0.4 };
-         left_plume_1.n = 4;
+         left_plume_1.x = new double[] {-1.57, -1.6, -1.47};
+         left_plume_1.y  = new double[] {-6.3, -1.5, -1.5};
+         left_plume_1.n = 3;
  
          stage_2_engine_1 = new ScenePoly();
          stage_2_engine_1.color = new Color(255,100,100);
-         stage_2_engine_1.x = new double[]  { 1.12, 1.18, 1.2, 1.1 };
-         stage_2_engine_1.y  = new double[] { 0.1, 0.1, 0.2, 0.2 };
+         stage_2_engine_1.x = new double[] {1.27, 1.3, 1.175, 1.205};
+         stage_2_engine_1.y  = new double[] {-1.125, -1.5, -1.5, -1.125};
          stage_2_engine_1.n = 4;
  
          right_plume_3 = new ScenePoly();
          right_plume_3.color = new Color(255,255,255);
-         right_plume_3.x = new double[]  { 1.1, 1.2, 1.24, 1.06 };
-         right_plume_3.y  = new double[] { 0.2, 0.2, 0.4, 0.4 };
-         right_plume_3.n = 4;
+         right_plume_3.x = new double[] {1.57, 1.6, 1.47};
+         right_plume_3.y  = new double[] {-6.3, -1.5, -1.5};
+         right_plume_3.n = 3;
  
          stage_2_engine_2 = new ScenePoly();
          stage_2_engine_2.color = new Color(255,100,100);
-         stage_2_engine_2.x = new double[]  { -1.12, -1.18, -1.2, -1.1 };
-         stage_2_engine_2.y  = new double[] { -0.1, -0.1, -0.2, -0.2 };
+         stage_2_engine_2.x = new double[] {1.42, 1.45, 1.325, 1.355};
+         stage_2_engine_2.y  = new double[] {-1.125, -1.5, -1.5, -1.125};
          stage_2_engine_2.n = 4;
  
          left_bottom_rcs_plume = new ScenePoly();
@@ -247,8 +247,8 @@
  
          stage_2_engine_3 = new ScenePoly();
          stage_2_engine_3.color = new Color(255,100,100);
-         stage_2_engine_3.x = new double[]  { 1.12, 1.18, 1.2, 1.1 };
-         stage_2_engine_3.y  = new double[] { -0.1, -0.1, -0.2, -0.2 };
+         stage_2_engine_3.x = new double[] {1.57, 1.6, 1.475, 1.505};
+         stage_2_engine_3.y  = new double[] {-1.125, -1.5, -1.5, -1.125};
          stage_2_engine_3.n = 4;
  
          right_bottom_rcs_plume = new ScenePoly();
