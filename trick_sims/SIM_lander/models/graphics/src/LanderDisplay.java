@@ -200,19 +200,19 @@
          stage_1_engine_1 = new ScenePoly();
          stage_1_engine_1.color = new Color(100,100,100);
          stage_1_engine_1.x = new double[] {-1.57, -1.6, -1.475, -1.505};
-         stage_1_engine_1.y  = new double[] {-1.125, -1.5, -1.5, -1.125};
+         stage_1_engine_1.y = new double[] {-1.125, -1.5, -1.5, -1.125};
          stage_1_engine_1.n = 4;
  
          stage_1_engine_2 = new ScenePoly();
          stage_1_engine_2.color = new Color(100,100,100);
          stage_1_engine_2.x = new double[] {-1.42, -1.45, -1.325, -1.355};
-         stage_1_engine_2.y  new double[] {-1.125, -1.5, -1.5, -1.125};
+         stage_1_engine_2.y = new double[] {-1.125, -1.5, -1.5, -1.125};
          stage_1_engine_2.n = 4;
  
          stage_1_engine_3 = new ScenePoly();
          stage_1_engine_3.color = new Color(255,100,100);
          stage_1_engine_3.x = new double[] {-1.27, -1.3, -1.175, -1.205};
-         stage_1_engine_3.y  new double[] {-1.125, -1.5, -1.5, -1.125}
+         stage_1_engine_3.y = new double[] {-1.125, -1.5, -1.5, -1.125}
          stage_1_engine_3.n = 4;
  
          left_plume_1 = new ScenePoly();
